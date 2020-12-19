@@ -1,0 +1,33 @@
+extends ../page.jade
+
+block page_header
+  h2
+    span.header-text-border Contatto diretto
+
+block page_content
+  section#contact-send
+    div.container
+      div.alert.alert-info(ng-if="success")
+        p Messaggio inviato. Risponderò il prima possibile, a presto!
+
+      form(method="post", name="contactForm", ng-submit="submit()")
+        div.form-group
+          label Tipo di richiesta
+          select(name="choice", ng-model="data.choice").form-control
+            option(value="1", ng-selected="data.choice == 1") Domanda generica
+            option(value="2", ng-selected="data.choice == 2") Domanda su uno dei miei progetti
+            option(value="3", ng-selected="data.choice == 3") Suggerimento - Feedback
+
+        div.form-group
+          label Tuo indirizzo e-mail
+          input(type="text", name="from", ng-model="data.from", required="required").form-control
+
+        div.form-group
+          label Oggetto
+          input(type="text", name="subject", ng-model="data.subject", required="required").form-control
+
+        div.form-group
+          label Messaggio
+          textarea(name="message", ng-model="data.message", required="required", rows="10").form-control
+
+        input(type="submit", value="Invia messaggio", ng-disabled="contactForm.$invalid").btn.btn-lg.btn-primary

@@ -1,0 +1,35 @@
+extends ../page.jade
+
+block page_header
+  h2
+    span.header-text-border Info Progetto
+
+block page_content
+  section#project-info-section
+    header.big-section-header.text-center
+      div.container
+        h2 {{ currentProject.name }}
+        p.lead {{ currentProject.description }}
+
+    div.container
+      div.carousel.slide(data-ride="carousel")#project-carousel
+        ol.carousel-indicators
+          li(data-target="#project-carousel",
+             ng-repeat="render in currentProject.images.renders",
+             ng-class="{active:$first}",
+             data-slide-to="{{ $index }}")
+
+        div.carousel-inner
+          div.item(ng-repeat="render in currentProject.images.renders",
+                   ng-class="{active:$first}")
+            img(ng-src="{{ render.standard }}")
+
+        a.carousel-control.left(href="#project-carousel",
+                                target="_self",
+                                data-slide="prev")
+          span.glyphicon.glyphicon-chevron-left
+
+        a.carousel-control.right(href="#project-carousel",
+                                 target="_self",
+                                 data-slide="next")
+          span.glyphicon.glyphicon-chevron-right

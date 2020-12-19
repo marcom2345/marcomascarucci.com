@@ -1,0 +1,34 @@
+extends ../page.jade
+
+block page_header
+  h2
+    span.header-text-border Portfolio
+
+block page_content
+  section#projects-section
+    header.big-section-header.text-center
+      div.container
+        h2 Design di interni
+
+    div.container
+      div.row
+        div.col-md-4(ng-repeat="project in projects | orderBy:'-order'")
+          div.panel.panel-default
+            div.panel-heading.text-center
+              h4.panel-title {{ project.name }}
+            div.panel-body
+              a(href="#/projects/{{ project.id }}")
+                img(ng-src="{{ project.images.thumb }}").img-responsive
+            div.panel-footer.clearfix
+              div.pull-left.text-muted Stanze: {{ project.rooms.join(', ') }}
+              div.pull-right
+                a(href="#/projects/{{ project.id }}") Più info
+
+  section#software-section
+    header.big-section-header.text-center
+      div.container
+        h2 Software utilizzati
+
+    div.container
+      div.text-center
+        img(src="assets/img/soft-3dsmax.png")

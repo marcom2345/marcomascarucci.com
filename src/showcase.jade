@@ -1,0 +1,36 @@
+div.carousel.slide(data-ride="carousel")#main-carousel
+  ol.carousel-indicators
+    li(data-target="#main-carousel", data-slide-to="0").active
+    li(data-target="#main-carousel", data-slide-to="1")
+    li(data-target="#main-carousel", data-slide-to="2")
+
+  div.carousel-inner
+    a.carousel-control.left(href='#main-carousel', data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left
+
+    a.carousel-control.right(href='#main-carousel', data-slide='next')
+      span.glyphicon.glyphicon-chevron-right
+
+    div.item.active
+      img(src="assets/img/showcase-bg-1.jpg")
+      div.carousel-caption
+        h3 Marco Mascarucci
+        h4 #[span Interior Designer]
+        div.cta-wrapper
+          a.btn.btn-lg.btn-primary(href="#/projects") Guarda i miei progetti
+
+    div.item
+      img(src="assets/img/showcase-bg-2.jpg")
+      div.carousel-caption
+        h3 Chi sono
+        p.lead #[span Sono un interior designer con la passione per la computer-grafica.]
+        p.lead #[span Puntando al fotorealismo offro uno strumento in più a tutti quei professionisti alle prese con progetti elaborati e grafica 3D.]
+        div.cta-wrapper
+          a.btn.btn-lg.btn-primary(href="#/about") Più info e CV
+
+    div.item
+      img(src="assets/img/showcase-bg-3.jpg")
+      div.carousel-caption
+        h3 Ti serve un design personalizzato?
+        div.cta-wrapper
+          a.btn.btn-lg.btn-primary(href="#/contact") Contattami

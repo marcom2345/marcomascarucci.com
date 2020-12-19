@@ -1,0 +1,195 @@
+body
+{
+  font-family: 'Montserrat', sans-serif;
+}
+
+.progress-bar
+{
+  background: #028fcc;
+}
+
+.navbar-static-top
+{
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.navbar-contact .fa
+{
+  margin-right: 5px;
+}
+
+.cta-wrapper
+{
+  margin-top: 20px;
+}
+
+#header-contact
+{
+  color: #028fcc;
+}
+
+#main-navbar
+{
+  background: #202020;
+  min-height: 100px;
+}
+
+#main-navbar .navbar-toggle
+{
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+#main-navbar .navbar-brand
+{
+  height: 100px;
+  line-height: 100px;
+  padding: 0;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+#main-navbar .navbar-brand > img
+{
+  display: inline-block;
+  margin-right: 5px;
+}
+
+#main-navbar .navbar-nav > li > a
+{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#main-navbar .navbar-text
+{
+  line-height: 100px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.carousel-indicators li
+{
+  width: 16px;
+  height: 16px;
+  margin: 4px;
+}
+
+.carousel-indicators .active
+{
+  width: 16px;
+  height: 16px;
+  margin: 4px;
+}
+
+.carousel-caption
+{
+  padding-bottom: 5%;
+}
+
+.carousel-caption h3
+{
+  text-transform: uppercase;
+}
+
+.carousel-caption h4
+{
+  color: #028fcc;
+}
+
+.carousel-caption .cta-wrapper
+{
+  margin-top: 20px;
+}
+
+@media (min-width: 1200px)
+{
+  .carousel-caption h3
+  {
+    font-size: 60px;
+  }
+
+  .carousel-caption h4
+  {
+    font-size: 32px;
+  }
+
+  .carousel-caption .cta-wrapper
+  {
+    margin-top: 40px;
+  }
+}
+
+section
+{
+  padding: 60px 0;
+}
+
+.big-section-header
+{
+  padding: 20px 0;
+}
+
+.big-section-header
+{
+  text-transform: uppercase;
+}
+
+.big-section-header h2
+{
+  font-weight: 800;
+}
+
+.big-section-header h3
+{
+  font-weight: 400;
+}
+
+.big-page-header
+{
+  padding: 140px 0;
+  background: url('../img/page-header-bg.jpg') center #333333;
+  color: #ffffff;
+}
+
+.big-page-header .big-section-header
+{
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.big-page-header h2 span
+{
+  padding-bottom: 5px;
+  border-bottom: 5px solid #028fcc;
+}
+
+#about-story
+{
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+#contact-section
+{
+  background: #028fcc;
+  color: #ffffff;
+}
+
+#contact-section .fa
+{
+  margin-bottom: 10px;
+}
+
+#contact-info-section .fa
+{
+  margin-right: 10px;
+}
+
+#main-footer
+{
+  padding: 80px 0;
+  background: #222222;
+  color: #ffffff;
+}

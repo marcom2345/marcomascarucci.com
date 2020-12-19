@@ -1,0 +1,59 @@
+extends ../page.jade
+
+block page_header
+  h2
+    span.header-text-border Chi sono
+
+block page_content
+  section#bio-section
+    div.container
+      div.row
+        div.col-xs-12.text-center#about-story
+          p Sono un interior designer con la passione per la computer-grafica.
+          p Puntando al fotorealismo offro uno strumento in più a tutti quei professionisti alle prese con progetti elaborati e grafica 3D.
+          p Mi occupo di modellazione 3D e progettazione architettonica di interni ed esterni, locali commerciali e pubblici.
+          p Attraverso una conoscenza accurata del mondo dei rendering 3D, partendo da una bozza o un file AutoCAD, si raggiunge lo scopo di concepire la visualizzazione di qualcosa che ancora non esiste. Il cliente può vedere l’opera finita, ancor prima che venga posato il primo mattone, con la possibilità di apportare modifiche al progetto fin quando non si è soddisfatti del risultato finale.
+
+      div.row
+        div.col-xs-12.text-center
+          a(href='/marco_mascarucci_cv.pdf', target='_blank').btn.btn-lg.btn-primary #[i.fa.fa-download] Scarica il mio CV
+
+  section#resume-section
+    header.big-section-header.text-center
+      div.container
+        h2 Abilità
+
+    div.container
+        div.text-center
+          img(src='assets/img/bio-cert.png')
+
+        h4 3DSMax
+        div.progress
+          div.progress-bar(style="width: 95%;")
+
+        h4 AutoCAD
+        div.progress
+          div.progress-bar(style="width: 85%;")
+
+        h4 Adobe Photoshop
+        div.progress
+          div.progress-bar(style="width: 75%;")
+
+        h4 Adobe Illustrator
+        div.progress
+          div.progress-bar(style="width: 55%;")
+
+  section#contact-info-section
+    header.big-section-header.text-center
+      div.container
+        h2 Come contattarmi
+
+    div.container
+      ul.list-group
+        li.list-group-item.text-center
+          i.fa.fa-envelope
+          a(href='mailto:info@marcomascarucci.com') info@marcomascarucci.com
+
+        li.list-group-item.text-center
+          i.fa.fa-exchange
+          a(href='/#/contact') Contatto diretto tramite questo sito

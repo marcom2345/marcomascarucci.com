@@ -1,0 +1,50 @@
+include ../showcase.jade
+
+section#projects-section
+  header.big-section-header.text-center
+    div.container
+      h2 Progetti recenti
+
+  div.container
+    div.row
+      div.col-md-4(ng-repeat="project in projects | orderBy:'-order' | limitTo:9")
+        div.panel.panel-default
+          div.panel-heading.text-center
+            h4.panel-title {{ project.name }}
+          div.panel-body
+            a(href="#/projects/{{ project.id }}")
+              img(ng-src="{{ project.images.thumb }}").img-responsive
+          div.panel-footer.clearfix
+            div.pull-left.text-muted Stanze: {{ project.rooms.join(', ') }}
+            div.pull-right
+              a(href="#/projects/{{ project.id }}") Più info
+
+    div.text-center
+      div.cta-wrapper
+        a(href="#/projects").btn.btn-lg.btn-default Guarda tutti i miei progetti
+
+//-
+  section#contact-section
+    header.big-section-header.text-center
+      div.container
+        h2 Ti serve un design personalizzato?
+        h3 Ecco come funziona
+
+    div.container.text-center
+      div.row
+        div.col-xs-4
+          i.fa.fa-5x.fa-crop
+          p Innanzitutto...
+
+        div.col-xs-4
+          i.fa.fa-5x.fa-cogs
+          p ... poi ...
+
+        div.col-xs-4
+          i.fa.fa-5x.fa-check-circle-o
+          p ... e infine.
+
+  section#ending-section
+    header.big-section-header.text-center
+      div.container
+        h2 Chiaro, no?
